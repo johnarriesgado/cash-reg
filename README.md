@@ -95,8 +95,10 @@ RULE_MAP = {
 ```
 Used by the OrderedItems service to calculate total and product breakdown.
 
-📄 TODO
+📄 Nice to Add
+Deploy to Render.com
 User Authentication
 CMS for managing products
 API for products
 Extend rule engine to use DB or JSON config or third party engine.
+
