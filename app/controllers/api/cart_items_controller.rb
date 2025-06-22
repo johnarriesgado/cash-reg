@@ -3,7 +3,7 @@ class Api::CartItemsController < ApplicationController
     cart = Cart.find_by(id: params[:cart_id])
     return render json: { error: "Cart not found" }, status: :not_found unless cart
 
-    product = Product.find_by(id: params[:product_id])
+    product = Product.find_by(code: params[:product_code])
     return render json: { error: "Product not found" }, status: :not_found unless product
 
     quantity = params[:quantity].to_i
